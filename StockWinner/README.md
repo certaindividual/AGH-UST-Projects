@@ -1,2 +1,6 @@
 # StockWinner
-https://docs.google.com/document/d/1XXYpHIJZHg2CBl6FJXi_R3ag0iQI3Xm8NZH0sYMyrdE/edit?usp=sharing
+
+Project completed together with: <br />
+Mikołaj Dłuś (https://github.com/Dwoosh) <br />
+Jakub Cieloch (https://github.com/jcieloch)
+
