@@ -1,3 +1,7 @@
+Project completed together with:
+Maciej Moskal
+https://github.com/tadeq
+
 # Security camera based on embedded system
 ##### Raspberry Pi with OpenCV and Flask
 When motion is detected the led is on and the object is framed on screen.
