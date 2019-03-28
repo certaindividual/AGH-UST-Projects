@@ -1,1 +1,1 @@
-# AGH-UST-Projects
+Projects  - Operating systems course
