@@ -1,5 +1,5 @@
-Project completed together with:
-Maciej Moskal
+Project completed together with: <br />
+Maciej Moskal <br />
 (https://github.com/tadeq)
 
 # Security camera based on embedded system
