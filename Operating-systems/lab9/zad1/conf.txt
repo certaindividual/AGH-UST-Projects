@@ -1,0 +1,8 @@
+P= 10
+K= 10
+N= 20
+book.txt
+L= 25
+lmode= 0
+mode= 1
+NK= 0

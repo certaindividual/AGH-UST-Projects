@@ -1,0 +1,331 @@
+Wnioski ogólne:
+-funkcje systemowe działają szybciej od bibliotecznych
+-największy wpływ na czas wykonywania funkcji ma ilość rekordów
+-rozmiar rekordów ma duże znaczenie przy generowaniu plików i kopiowaniu
+-przy sortowaniu, rozmiar rekordów nie ma dużego znaczenia
+----------------------------------------------------------------------------
+#generating test
+for recordSize in 4 512 4096 8192; do \
+        for numberOfRecords in 5000 10000 100000; do \
+                echo "Task: generate file with $numberOfRecords records of size $recordSize"; \
+                ./main generate dane $numberOfRecords $recordSize; \
+                rm dane; \
+        done; \
+done
+Task: generate file with 5000 records of size 4
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.000000s                0.000000s                 0.000000s
+Task: generate file with 10000 records of size 4
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.000000s                0.000000s                 0.000000s
+Task: generate file with 100000 records of size 4
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.010000s                0.000000s                 0.000000s
+Task: generate file with 5000 records of size 512
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.050000s                0.010000s                 0.010000s
+Task: generate file with 10000 records of size 512
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.070000s                0.010000s                 0.040000s
+Task: generate file with 100000 records of size 512
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.560000s                0.190000s                 0.340000s
+Task: generate file with 5000 records of size 4096
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.240000s                0.060000s                 0.130000s
+Task: generate file with 10000 records of size 4096
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.480000s                0.210000s                 0.230000s
+Task: generate file with 100000 records of size 4096
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       4.050000s                1.510000s                 2.430000s
+Task: generate file with 5000 records of size 8192
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.470000s                0.110000s                 0.310000s
+Task: generate file with 10000 records of size 8192
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.880000s                0.310000s                 0.520000s
+Task: generate file with 100000 records of size 8192
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       7.960000s                3.150000s                 4.750000s
+--------------------------------------------------------------------------------------------
+#copy test
+for recordSize in 4 512 4096 8192; do \
+        for numberOfRecords in 5000 100000; do \
+        echo "-----"; \
+        echo "-----"; \
+        echo "-----"; \
+        echo "Task: copy $numberOfRecords records of size $recordSize"; \
+        echo "Generating needed file"; \
+        ./main generate dane $numberOfRecords $recordSize; \
+                for testVersion in sys lib; do \
+                        echo "------------------------------------------------"; \
+                        echo "Version: $testVersion functions"; \
+                        ./main copy dane dane_CPY $numberOfRecords $recordSize $testVersion; \
+                        rm dane_CPY; \
+                done; \
+        done; \
+done
+-----
+-----
+-----
+Task: copy 5000 records of size 4
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.000000s                0.000000s                 0.000000s
+------------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.010000s                0.000000s                 0.000000s
+------------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.000000s                0.000000s                 0.000000s
+-----
+-----
+-----
+Task: copy 100000 records of size 4
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.010000s                0.000000s                 0.000000s
+------------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.190000s                0.020000s                 0.150000s
+------------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.010000s                0.000000s                 0.000000s
+-----
+-----
+-----
+Task: copy 5000 records of size 512
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.020000s                0.000000s                 0.010000s
+------------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.020000s                0.000000s                 0.000000s
+------------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.000000s                0.000000s                 0.000000s
+-----
+-----
+-----
+Task: copy 100000 records of size 512
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.570000s                0.220000s                 0.300000s
+------------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.220000s                0.010000s                 0.190000s
+------------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.060000s                0.010000s                 0.030000s
+-----
+-----
+-----
+Task: copy 5000 records of size 4096
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.230000s                0.070000s                 0.130000s
+------------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.030000s                0.000000s                 0.010000s
+------------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.020000s                0.000000s                 0.010000s
+-----
+-----
+-----
+Task: copy 100000 records of size 4096
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       4.300000s                1.530000s                 2.320000s
+------------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.470000s                0.010000s                 0.420000s
+------------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.350000s                0.070000s                 0.260000s
+-----
+-----
+-----
+Task: copy 5000 records of size 8192
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.490000s                0.160000s                 0.310000s
+------------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.040000s                0.000000s                 0.030000s
+------------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.050000s                0.000000s                 0.030000s
+-----
+-----
+-----
+Task: copy 100000 records of size 8192
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       9.490000s                3.030000s                 5.410000s
+------------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.700000s                0.020000s                 0.620000s
+------------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.700000s                0.060000s                 0.600000s
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+#sorting test
+for recordSize in 4 512 4096 8192; do \
+        for numberOfRecords in 2000 10000; do \
+                echo "-----"; \
+                echo "-----"; \
+                echo "-----"; \
+                echo "Task: sort $numberOfRecords records of size $recordSize"; \
+                echo "Generating needed file"; \
+                ./main generate dane $numberOfRecords $recordSize; \
+                cp dane dane_COPY; \
+                echo "------------------------------------------"; \
+                echo "Version: lib functions"; \
+                ./main sort dane $numberOfRecords $recordSize lib; \
+                echo "------------------------------------------"; \
+                echo "Version: sys functions"; \
+                ./main sort dane_COPY $numberOfRecords $recordSize sys; \
+                rm dane; \
+                rm dane_COPY; \
+        done; \
+done
+-----
+-----
+-----
+Task: sort 2000 records of size 4
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.110000s                0.000000s                 0.080000s
+------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       2.660000s                0.620000s                 2.000000s
+------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       2.130000s                0.420000s                 1.670000s
+-----
+-----
+-----
+Task: sort 10000 records of size 4
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.000000s                0.000000s                 0.000000s
+------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       63.380000s                14.960000s                 47.970000s
+------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       50.840000s                9.820000s                 40.730000s
+-----
+-----
+-----
+Task: sort 2000 records of size 512
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.010000s                0.010000s                 0.000000s
+------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       3.240000s                0.740000s                 2.370000s
+------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       2.300000s                0.440000s                 1.830000s
+-----
+-----
+-----
+Task: sort 10000 records of size 512
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.050000s                0.010000s                 0.040000s
+------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       71.840000s                17.370000s                 54.250000s
+------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       55.840000s                10.080000s                 45.140000s
+-----
+-----
+-----
+Task: sort 2000 records of size 4096
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.080000s                0.030000s                 0.050000s
+------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       5.160000s                1.040000s                 4.030000s
+------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       3.150000s                0.400000s                 2.640000s
+-----
+-----
+-----
+Task: sort 10000 records of size 4096
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.510000s                0.150000s                 0.270000s
+------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       138.460000s                25.450000s                 110.580000s
+------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       79.850000s                9.560000s                 68.720000s
+-----
+-----
+-----
+Task: sort 2000 records of size 8192
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.200000s                0.060000s                 0.100000s
+------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       6.770000s                1.060000s                 5.620000s
+------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       3.920000s                0.360000s                 3.530000s
+-----
+-----
+-----
+Task: sort 10000 records of size 8192
+Generating needed file
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       0.780000s                0.260000s                 0.500000s
+------------------------------------------
+Version: lib functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       170.780000s                27.730000s                 140.370000s
+------------------------------------------
+Version: sys functions
+   Real time [seconds]      User time [seconds]      System time [seconds]
+       100.100000s                9.310000s                 90.360000s

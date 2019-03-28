@@ -1,0 +1,122 @@
+Biblioteki dynamiczne, ladowane podaczas dzialania programu:
+
+----------------------------------------------------------------
+Statyczna alokacja
+
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.310000    12.040000    0.190000
+search_element
+    2.250000    2.240000    0.000000
+remove
+    0.010000    0.000000    0.000000
+add
+    4.120000    4.020000    0.080000
+remove_and_add
+    1.160000    1.110000    0.030000
+
+
+Dynamiczna alokacja
+
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.860000    12.110000    0.660000
+search_element
+    2.300000    2.280000    0.000000
+remove
+    0.020000    0.020000    0.000000
+add
+    4.160000    4.070000    0.100000
+remove_and_add
+    1.650000    1.600000    0.040000
+
+--------------------------------------------------------------
+
+Biblioteki statyczne:
+
+Statyczna alokacja
+
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    13.860000    12.600000    0.310000
+search_element
+    2.280000    2.240000    0.010000
+remove
+    0.000000    0.000000    0.000000
+add
+    3.960000    3.850000    0.080000
+remove_and_add
+    1.120000    1.110000    0.020000
+
+
+Dynamiczna alokacja
+
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.590000    12.120000    0.460000
+search_element
+    2.270000    2.270000    0.000000
+remove
+    0.010000    0.010000    0.000000
+add
+    3.910000    3.840000    0.080000
+remove_and_add
+    1.160000    1.110000    0.030000
+
+    
+--------------------------------------------------------------
+
+Biblioteki dynamiczne, ladowane przy uruchomieniu programu
+
+Statyczna alokacja
+
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    13.600000    12.640000    0.400000
+search_element
+    2.270000    2.220000    0.010000
+remove
+    0.010000    0.010000    0.000000
+add
+    3.950000    3.800000    0.100000
+remove_and_add
+    1.140000    1.110000    0.020000
+
+
+Dynamiczna alokacja
+
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.640000    12.190000    0.390000
+search_element
+    2.280000    2.280000    0.000000
+remove
+    0.020000    0.020000    0.000000
+add
+    5.050000    4.570000    0.140000
+remove_and_add
+    1.860000    1.550000    0.060000
+
+
+
+--------------------------------------------------------------
+Jak widac, najszybciej wykonuja sie programy z biblikotekami statycznymi
+W drugiej kolejnosci dynamiczne ladowane przy uruchamianiu programu,
+Najwolniej dynamicznie ladowane podczas dzialania programu
+
+Jednakze te ostatnie zajmuja mniej pamieci niz statyczne
+
+
+

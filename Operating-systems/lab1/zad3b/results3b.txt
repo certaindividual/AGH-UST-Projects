@@ -1,0 +1,683 @@
+[matthew@debian9:~/SysOpy/MonasterskiMateusz-cw01/MonasterskiMateusz/cw01/zad3b]$ make all
+
+--------------------------------------------------------------------------------------------------------
+make zad3_static_O
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.840000    11.400000    0.380000
+search_element
+    2.300000    2.270000    0.000000
+remove
+    0.000000    0.000000    0.000000
+add
+    5.100000    3.450000    0.160000
+remove_and_add
+    1.180000    1.040000    0.040000
+
+
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    15.710000    15.000000    0.620000
+search_element
+    2.280000    2.260000    0.000000
+remove
+    0.020000    0.020000    0.000000
+add
+    3.610000    3.580000    0.040000
+remove_and_add
+    1.210000    1.110000    0.040000
+
+make zad3_dynamic_O
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.210000    10.700000    0.310000
+search_element
+    2.360000    2.280000    0.010000
+remove
+    0.010000    0.000000    0.000000
+add
+    3.700000    3.560000    0.090000
+remove_and_add
+    1.130000    1.050000    0.070000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.630000    10.940000    0.650000
+search_element
+    2.340000    2.340000    0.000000
+remove
+    0.030000    0.030000    0.000000
+add
+    3.900000    3.770000    0.120000
+remove_and_add
+    1.150000    1.100000    0.040000
+
+	
+make zad3_shared_O
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    10.770000    10.270000    0.300000
+search_element
+    2.310000    2.230000    0.000000
+remove
+    0.000000    0.000000    0.000000
+add
+    3.670000    3.530000    0.100000
+remove_and_add
+    1.300000    1.270000    0.040000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.060000    10.480000    0.500000
+search_element
+    2.350000    2.340000    0.000000
+remove
+    0.020000    0.030000    0.000000
+add
+    3.840000    3.750000    0.080000
+remove_and_add
+    1.320000    1.270000    0.040000
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+	
+make zad3_static_Os
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.030000    11.580000    0.280000
+search_element
+    2.310000    2.300000    0.000000
+remove
+    0.000000    0.010000    0.000000
+add
+    4.090000    3.970000    0.090000
+remove_and_add
+    1.270000    1.150000    0.050000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.980000    11.490000    0.440000
+search_element
+    2.330000    2.340000    0.000000
+remove
+    0.040000    0.030000    0.000000
+add
+    4.080000    3.960000    0.120000
+remove_and_add
+    1.240000    1.210000    0.020000
+
+	
+make zad3_dynamic_Os
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.220000    11.660000    0.240000
+search_element
+    2.280000    2.270000    0.000000
+remove
+    0.000000    0.010000    0.000000
+add
+    4.160000    4.040000    0.100000
+remove_and_add
+    1.190000    1.160000    0.030000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.770000    12.200000    0.460000
+search_element
+    2.290000    2.260000    0.000000
+remove
+    0.030000    0.020000    0.010000
+add
+    4.250000    3.890000    0.060000
+remove_and_add
+    1.310000    1.160000    0.050000
+
+	
+make zad3_shared_Os
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.830000    11.270000    0.240000
+search_element
+    2.410000    2.250000    0.020000
+remove
+    0.000000    0.000000    0.000000
+add
+    4.100000    3.880000    0.090000
+remove_and_add
+    1.360000    1.260000    0.030000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.750000    11.970000    0.660000
+search_element
+    2.390000    2.340000    0.010000
+remove
+    0.010000    0.010000    0.000000
+add
+    4.000000    3.870000    0.080000
+remove_and_add
+    1.360000    1.310000    0.020000
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+	
+make zad3_static_O0
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    13.700000    13.000000    0.360000
+search_element
+    2.370000    2.250000    0.020000
+remove
+    0.000000    0.000000    0.000000
+add
+    4.300000    4.170000    0.100000
+remove_and_add
+    1.300000    1.280000    0.020000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    13.250000    12.580000    0.440000
+search_element
+    2.380000    2.320000    0.020000
+remove
+    0.030000    0.020000    0.000000
+add
+    4.240000    4.140000    0.100000
+remove_and_add
+    1.290000    1.260000    0.020000
+
+	
+make zad3_dynamic_O0
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    13.370000    12.500000    0.340000
+search_element
+    2.230000    2.220000    0.010000
+remove
+    0.000000    0.000000    0.000000
+add
+    4.390000    4.120000    0.160000
+remove_and_add
+    1.510000    1.260000    0.050000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    14.410000    12.960000    0.580000
+search_element
+    2.490000    2.310000    0.020000
+remove
+    0.020000    0.010000    0.000000
+add
+    4.170000    4.060000    0.100000
+remove_and_add
+    1.260000    1.230000    0.020000
+
+	
+make zad3_shared_O0
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    13.800000    12.760000    0.400000
+search_element
+    2.380000    2.340000    0.000000
+remove
+    0.000000    0.000000    0.000000
+add
+    4.180000    4.020000    0.100000
+remove_and_add
+    1.360000    1.240000    0.040000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.610000    12.060000    0.460000
+search_element
+    2.390000    2.280000    0.010000
+remove
+    0.040000    0.030000    0.000000
+add
+    4.300000    4.190000    0.070000
+remove_and_add
+    1.430000    1.370000    0.040000
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+	
+make zad3_static_O1
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.150000    10.500000    0.390000
+search_element
+    2.330000    2.200000    0.020000
+remove
+    0.000000    0.000000    0.000000
+add
+    3.710000    3.530000    0.110000
+remove_and_add
+    1.030000    1.000000    0.040000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.040000    10.380000    0.580000
+search_element
+    2.380000    2.310000    0.010000
+remove
+    0.030000    0.030000    0.000000
+add
+    3.470000    3.340000    0.100000
+remove_and_add
+    1.180000    1.100000    0.030000
+
+	
+make zad3_dynamic_O1
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.220000    10.530000    0.280000
+search_element
+    2.350000    2.300000    0.000000
+remove
+    0.000000    0.010000    0.000000
+add
+    3.640000    3.460000    0.100000
+remove_and_add
+    1.120000    1.100000    0.010000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.250000    10.510000    0.580000
+search_element
+    2.320000    2.290000    0.010000
+remove
+    0.020000    0.030000    0.000000
+add
+    3.570000    3.430000    0.070000
+remove_and_add
+    1.070000    1.040000    0.030000
+
+	
+make zad3_shared_O1
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.170000    10.440000    0.270000
+search_element
+    2.370000    2.210000    0.030000
+remove
+    0.000000    0.010000    0.000000
+add
+    3.800000    3.580000    0.120000
+remove_and_add
+    1.030000    1.010000    0.010000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.310000    10.680000    0.580000
+search_element
+    2.320000    2.310000    0.000000
+remove
+    0.030000    0.030000    0.000000
+add
+    3.790000    3.630000    0.140000
+remove_and_add
+    1.120000    1.070000    0.050000
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+	
+make zad3_static_O2
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.540000    10.960000    0.280000
+search_element
+    2.380000    2.280000    0.020000
+remove
+    0.000000    0.000000    0.000000
+add
+    4.070000    3.820000    0.110000
+remove_and_add
+    1.310000    1.240000    0.040000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.520000    11.760000    0.620000
+search_element
+    2.290000    2.230000    0.000000
+remove
+    0.030000    0.030000    0.000000
+add
+    3.870000    3.770000    0.090000
+remove_and_add
+    1.180000    1.130000    0.050000
+
+	
+make zad3_dynamic_O2
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.600000    10.880000    0.360000
+search_element
+    2.320000    2.260000    0.000000
+remove
+    0.000000    0.010000    0.000000
+add
+    3.920000    3.660000    0.110000
+remove_and_add
+    1.250000    1.120000    0.060000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.020000    0.000000    0.000000
+filling in
+    12.380000    11.440000    0.720000
+search_element
+    2.410000    2.310000    0.010000
+remove
+    0.030000    0.020000    0.000000
+add
+    3.970000    3.740000    0.070000
+remove_and_add
+    1.210000    1.160000    0.020000
+
+	
+make zad3_shared_O2
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.700000    11.010000    0.320000
+search_element
+    2.480000    2.390000    0.000000
+remove
+    0.000000    0.000000    0.000000
+add
+    3.760000    3.540000    0.080000
+remove_and_add
+    1.590000    1.480000    0.050000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    14.400000    13.440000    0.820000
+search_element
+    2.530000    2.530000    0.000000
+remove
+    0.030000    0.030000    0.000000
+add
+    4.130000    4.020000    0.090000
+remove_and_add
+    1.230000    1.180000    0.050000
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+	
+make zad3_static_O3
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.010000    11.250000    0.330000
+search_element
+    2.650000    2.370000    0.010000
+remove
+    0.010000    0.000000    0.000000
+add
+    4.190000    3.800000    0.100000
+remove_and_add
+    1.180000    1.100000    0.050000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    13.680000    11.900000    0.610000
+search_element
+    2.380000    2.320000    0.010000
+remove
+    0.030000    0.020000    0.000000
+add
+    3.720000    3.660000    0.070000
+remove_and_add
+    1.140000    1.040000    0.040000
+
+	
+make zad3_dynamic_O3
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.790000    11.070000    0.310000
+search_element
+    2.290000    2.270000    0.000000
+remove
+    0.000000    0.010000    0.000000
+add
+    3.720000    3.570000    0.130000
+remove_and_add
+    1.050000    1.020000    0.000000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.660000    10.950000    0.500000
+search_element
+    2.380000    2.280000    0.020000
+remove
+    0.030000    0.030000    0.000000
+add
+    4.030000    3.890000    0.120000
+remove_and_add
+    1.110000    1.100000    0.020000
+
+	
+make zad3_shared_O3
+
+
+#staticAlloction
+./testS 300000 600 0 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    11.170000    10.540000    0.320000
+search_element
+    2.320000    2.260000    0.000000
+remove
+    0.000000    0.010000    0.000000
+add
+    3.620000    3.490000    0.100000
+remove_and_add
+    1.020000    1.000000    0.020000
+
+	
+#dynamicAllocation
+./testS 300000 600 1 search_element 3024 remove 100000 0 add 100000 0 remove_and_add 30000
+    Real    User    System
+creation
+    0.000000    0.000000    0.000000
+filling in
+    12.270000    11.530000    0.630000
+search_element
+    2.310000    2.310000    0.000000
+remove
+    0.020000    0.030000    0.000000
+add
+    4.140000    4.020000    0.100000
+remove_and_add
+    1.190000    1.150000    0.030000
+
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+Najbardziej efektywny -O1

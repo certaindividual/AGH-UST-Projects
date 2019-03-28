@@ -1,0 +1,5 @@
+echo "Wypisywanie tekstu echo"
+echo LamaczPamieci
+./lamaczPamieci
+echo LamaczCzasu
+./lamaczCzasu

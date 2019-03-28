@@ -1,0 +1,5 @@
+ls -la /etc | head -10 | tail -10
+ls /etc | head -10
+ls /etc | head -3 | tail -1
+ls -la | head -1 | tail -1
+grep a /etc/passwd | head -10

@@ -1,0 +1,100 @@
+---------------------------------------------------------------
+Threads nr: 1, filter: filter5
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 5
+Czas operacji: 0 s 61344934 nsec
+---------------------------------------------------------------
+Threads nr: 2, filter: filter5
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 5
+Czas operacji: 0 s 65242953 nsec
+---------------------------------------------------------------
+Threads nr: 4, filter: filter5
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 5
+Czas operacji: 0 s 59122816 nsec
+---------------------------------------------------------------
+Threads nr: 8, filter: filter5
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 5
+Czas operacji: 0 s 74677274 nsec
+---------------------------------------------------------------
+Threads nr: 1, filter: filter15
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 15
+Czas operacji: 0 s 511206268 nsec
+---------------------------------------------------------------
+Threads nr: 2, filter: filter15
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 15
+Czas operacji: 0 s 411202460 nsec
+---------------------------------------------------------------
+Threads nr: 4, filter: filter15
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 15
+Czas operacji: 0 s 384982315 nsec
+---------------------------------------------------------------
+Threads nr: 8, filter: filter15
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 15
+Czas operacji: 0 s 355189515 nsec
+---------------------------------------------------------------
+Threads nr: 1, filter: filter30
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 30
+Czas operacji: 2 s 56141221 nsec
+---------------------------------------------------------------
+Threads nr: 2, filter: filter30
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 30
+Czas operacji: 1 s 129263494 nsec
+---------------------------------------------------------------
+Threads nr: 4, filter: filter30
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 30
+Czas operacji: 1 s 125296316 nsec
+---------------------------------------------------------------
+Threads nr: 8, filter: filter30
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 30
+Czas operacji: 1 s 102079465 nsec
+---------------------------------------------------------------
+Threads nr: 1, filter: filter45
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 45
+Czas operacji: 4 s 383547340 nsec
+---------------------------------------------------------------
+Threads nr: 2, filter: filter45
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 45
+Czas operacji: 2 s 387651081 nsec
+---------------------------------------------------------------
+Threads nr: 4, filter: filter45
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 45
+Czas operacji: 2 s 343399933 nsec
+---------------------------------------------------------------
+Threads nr: 8, filter: filter45
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 45
+Czas operacji: 2 s 308122239 nsec
+---------------------------------------------------------------
+Threads nr: 1, filter: filter60
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 60
+Czas operacji: 7 s 743189786 nsec
+---------------------------------------------------------------
+Threads nr: 2, filter: filter60
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 60
+Czas operacji: 4 s 120389444 nsec
+---------------------------------------------------------------
+Threads nr: 4, filter: filter60
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 60
+Czas operacji: 4 s 173764581 nsec
+---------------------------------------------------------------
+Threads nr: 8, filter: filter60
+Rozmiar obrazu: 300 x 246
+Rozmiar filtru (c): 60
+Czas operacji: 3 s 981291444 nsec

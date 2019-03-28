@@ -1,0 +1,5 @@
+ls -l
+echo "Wypisywanie tekstu echo"
+sleep 5
+echo Program konczacy sie bledem
+./wrong_program

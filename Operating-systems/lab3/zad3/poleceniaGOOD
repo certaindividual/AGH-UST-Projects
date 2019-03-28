@@ -1,0 +1,5 @@
+ls -l
+echo "Wypisywanie tekstu echo"
+echo Sleep
+sleep 5
+./programik
